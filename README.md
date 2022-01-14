@@ -1,6 +1,6 @@
 # How The Internet Works
 
-## A Primer for Everyone
+### A Primer for Everyone
 
 [Jason Norwood-Young](mailto:jason@10layer.com)
 
@@ -11,7 +11,7 @@ Most people don't know, or think about, exactly how it works. And I don't mean j
 So what, exactly, does happen from the moment you enter a web address, (or, in geek-parlance, a universal resource locator, or URL) into your browser and hit enter? It's a lot, kids. A whole hell of a lot.
 
 
-# Your place on the web
+## Your place on the web
 
 The web address, or URL, has become so recognisable as part of our culture that we seldom stop to think about how weird it is. Why do we have different endings, like .com, .org, or .co.za? Why do we sometimes have www at the beginning, and sometimes we don't? Sometimes I see "http://" and sometimes "https://", but I don't even need to include them in the URL. Why? Who looks after all this stuff, anyway? Who invented it? And what's with all the dots?
 
@@ -36,14 +36,14 @@ When you "buy" a domain name, whether for cybersquatting or legitimate reasons, 
 If you don't already own your own domain name, I encourage you to go through the process of purchasing one. The domain name you choose to buy, provided it's available, is limited only by your imagination. Once you have it, you can use it for your email address, a website, or simply to own your own address as of the global internet amongst the [365 million other registered domains](https://www.verisign.com/en_US/domain-names/dnib/index.xhtml). 
 
 
-# Where would you like to go today?
+## Where would you like to go today?
 
 Translating one of those 365 million domains to an actual server's location in less than a blink of an eye uses a technology called DNS, or the Domain Name System. Along with your name, telephone number and address that gets registered with the registrar, another field, the DNS server address, is also stored. (Technically, a number of DNS server addresses are usually stored, typically four, for redundancy. But for simplicity we'll pretend this is a single server.) This address, represented by a bunch of numbers called an IP address, which we'll get to in a minute, in turn has a list of domain names associated to other IP addresses. This allows you to have multiple subdomains, such as "[www.example.com](www.example.com)", "email.example.com", or simply "example.com". (The domain "example.com" is interesting in itself, being a reserved domain on the internet for people like me to use in examples without pointing at a real site.) 
 
 So when you hit "enter" on your web browser, your browser will first find the correct registrar to look up the domain name, then it will receive the DNS address, and then it will query the DNS to get the IP address of whatever it's looking for. So far your browser has had two full conversations, and it hasn't even started downloading the site. All it has is a set of numbers, that looks something like 93.184.216.34 (the IP address of example.com). This address will tell it how to get to the server that hosts the website we're looking for. We're just getting started.
 
 
-# Pushing the boundaries of conservatism
+## Pushing the boundaries of conservatism
 
 The whole process seems a little convoluted. And trust me, we're just getting started on the convolution. It almost seems like it's a process designed by a committee. How can the internet, the love-child of marxism and the hippy movement, be so clunky and bureaucratic? It comes back to the founding principles of the internet, a glorious mix of liberal idealism and conservative standardisation.
 
@@ -66,7 +66,7 @@ The Worldwide Web Consortium, better known by its catchy acronym W3C, is in char
 Another example of the slow pace of change has been the adoption of IPv6, which was designed and drafted by the Internet Engineering Task Force (IETF) in 1998, but took until 2017 to be adopted, and we are only starting to see it in use today. 
 
 
-# IP Freely
+## IP Freely
 
 Hold up, IP what? An IP, or internet protocol, address, as mentioned before, is a bunch of numbers (four, to be precise) separated by dots. Everything on the internet gets an IP address. The server your are getting content from has one, which is why we go through that whole process of changing a domain name (example.com) into an IP address (93.184.216.34). Each of the four numbers range from 0 to 255. (255 is a popular number in computing, since computers like to count in binary – zeros and ones – and eight consecutive ones (11111111) in binary equals 255 in our decimal notation). 
 
@@ -75,7 +75,7 @@ When I say everything gets an IP address, I do mean everything. Your computer, y
 The four-part IP address is known as IP version 4, or IPv4. Version 6 of the IP address system, which took from 1998 to 2017 to be ratified, uses eight groups of numbers, so double that of IPv4. It also uses hexadecimal to count, a number system that goes from zero to 15. (To count in hexadecimal, once you hit 9, you use A for 10, B for 11, C for 12 etcetera until F, which equals 15. Where in binary you need eight ones to represent 255, in hexadecimal, 255 is written as "FF".) The combination of four hex characters eight times gives us an astonishing 340,282,366,920,938,463,463,374,607,431,768,211,456 possible addresses to use. (340 trillion, trillion, trillion.) It is safe to say that we will never run out of IP addresses. Every atom on planet earth can get 100 IP addresses before we run out. An IPv6 address looks something like "​​2001:db8::8a2e:370:7334" – for brevity we skip out the extraneous zeros which is why some of the groups are shorter than four characters, and some are completely empty. 
 
 
-# Passing down the line
+## Passing down the line
 
 Now we know the IP address of the server we would like to get information from, it's time to figure out how to get there. The first thing your browser will do will be to wrap your information into a nice little parcel, called a "payload", and put a label with the delivery address, return address, and some more info on it, called the "header". The header and payload together are called a "packet", just like the cookie package you might get from your Gran. (In some cases they do in fact contain digital cookies.)
 
@@ -88,14 +88,14 @@ Given the chaos and anarchy, it's surprising the internet works at all, let alon
 Within the payload of these IP packets, we will often have a very similar-looking packet – a box in a box, if you will. It will also have its own header and payload, but it's not an internet protocol packet, it's an HTTP packet. And this brings up a very important point…
 
 
-# The web is not the internet
+## The web is not the internet
 
 While we might think of the World Wide Web, with its Facebook and Google and Wikipedia and your weird friend's old-fashioned blog as all being "the internet", it is merely a small passenger on a very large jumbo jet, catching a lift. The internet is the thing that transports data from place to place, but you can run all kinds of crazy services on it. WhatsApp, for instance, uses the internet, but not the web, to send messages between you and your racist suburb group. When we talk about IP phones or IP TVs, we're using the internet, but not the web, to transmit voice or video. Email is another biggie, using the internet but not touching the web, unless you're using the web to view the email using something like GMail once you've received it. The web has become a very, very big service using the internet to do what it does, but the internet doesn't care. It has toasters to update, large factories to monitor, spam to deliver, and Tesla drivers to A/B test on. 
 
 Internet (and networking) people love to talk about "layers". It's "layer one" this and "layer four" that. To demystify this, "layer one" is the actual physical network, like a wire between one router and another, or a wifi wave, or a satellite link to space and back. Layer four is the application layer, where the web lives. (Or to give it its correct name, the HTTP layer.) All the IP stuff sits in layer two, while layer three deals with TCP, or Transfer Control Protocol, another protocol that handles the safe delivery of our packets – essentially ensuring our bike messengers get where they're going. (IP and TCP are usually lumped together, known as TCP/IP.) 
 
 
-# Get this. Put that.
+## Get this. Put that.
 
 Back to the HTTP packets, the thing that makes the web the web. And you can see an HTTP packet in action, if you just open the "Developer" console on your browser, go to the "Networking" tab, and refresh. You'll probably see quite a lot of action, as your browser hits multiple resources to serve up the smorgasbord that is a modern website. Looking at any single request will show you the "Request Headers", and the "Response Headers". The Request is what your browser has sent to a web server. 
 
@@ -106,7 +106,7 @@ On most requests, the method will be "GET", which, obviously, says I would like 
 Since at first we're just putting a URL in our browser, the first thing will be the GET. If there is anything after the URL, such as [www.example.com/test](www.example.com/test), the path field will show the "/test" portion of the URL. It's not important for our DNS lookup or our routing, but it could be important to the server we're sending it to, so it's included in the GET request header.
 
 
-# Security! Security!
+## Security! Security!
 
 Then there's the schema, usually "http" or "https". This is the first part of the URL, and something we haven't explored just yet. As we've seen, http stands for "hypertext transfer protocol", but if we add the "s" we mean it needs to be "secure". Honestly, if you'd known how insecure http alone was, you'd have never used the damned thing. While more and more sites are https-only, there are still plenty of sites using http only. And when you use insecure http, your ISP, their ISP, and anyone on the same network as you has almost unlimited access to the data you send. Until a few years ago, it was trivial for hackers to connect to public wifi, grab the cookie (this time, a digital cookie) for your Facebook connection, and then masquerade as you on your account. (Or your bank, for that matter.) If you happened to enter a username or password while you were online, it was grabbed and recorded. The hackers didn't even have to work hard at it – simple web browser extensions would do the hard lifting for them, scanning the wifi for the words "username" and "password" when you submitted any form, to make password hacking quick and easy.
 
@@ -119,24 +119,22 @@ Along with the third-party stamp of approval that comes with a certificate, all 
 Not that you're guaranteed security just because there's one of those locks in your browser address bar, an indication that you've connected to an HTTPS server. Hackers are clever and resourceful, and can still attack your computer, compromise the server, or if they're motivated, perform a "man-in-the-middle" attack where they hijack the certificate itself. There's also a concern that the emergence of quantum computing will see all our encryption crumble before the sheer computing power we expect in the future. 
 
 
-# Loading…
+## Loading…
 
 We've sent our GET packet, it's taken a lift on an IP network, and finally we get a response, also in an HTTP packet wrapped in an IP packet, and also with a header, and hopefully that header contains the field "content-type", with the value "text/html". Peeling open our boxes, inside we find our payload… beautiful, structured HTML. Lots of angled brackets and forward-slashes, weird esoteric instructions, and buried in it all, the actual content of a web page that our browser throws onto our screen in all its glory. 
 
 Hypertext Markup Language (HTML) has come a hell of a long way, and not everyone agrees that the path it's taken was a good one. The original intent was for a bit of formatting (the Markup), links within and externally (Hypertext), all wrapped up in a reasonable-to-read common language. The monsters we see today, with interactivity, animation, styling, automatically redesigning the layout based on screen size for mobile phones (what we call "adaptive" and "responsive design")... it's all a bit much really. 
 
-Sidebar: 
-
-
-## The Javascript problem
+<details>
+    <summary>The Javascript problem</summary>
 
 The New York Times loads about 180 separate files, containing 16MB of data, for its front page. The King James bible, both old and new testaments, is about 4.13MB big, so the New York Times front page is over 3.8 times as large. Yet I could read the entire front page of the NYT in a few minutes, so where the heck is all this data coming from?
 
 An image is worth a thousand words, and when we're talking about web pages, we mean that very literally. Images account for about 2.1MB of data, or half a bible. Video is much heavier than an image, and even though there are only a few, they account for 3.6MB. (They're mostly adverts that load in their own time, not stopping you from using the page while they load, so we can just about ignore them.) Plain HTML – especially the primary page for the New York Times, takes up a surprising amount, 1.5MB. Stylesheets account for only 240KB, and fonts 268KB. But the real culprit on the New York Times, as well as so many other pages, is Javascript. It's 2.8MB, which, when one considers it's just plain text, is an enormous amount. Over a bible of code for interactivity on a web page that is largely static. 
 
 We tend to see the web as a costless method of communication, but this is not true. All those packets moving across the wire are driven by electricity. The New York Times' front page contains only 22,015 characters, so in terms of text, it should be 22KB, plus some HTML formatting, say another 100KB to be generous. Add the images, the fonts and styling, we're still not at a full bible. Between the Javascript and the video, we hit astronomic amounts of data, served every time someone visits the New York Times for the first time. With [327 million visits in the last six months](https://www.similarweb.com/website/nytimes.com/#overview), that's 873 terabytes of data delivered in Javascript alone. Multiply this over all the sites on the internet, the largest of which tend to have similar Javascript bloat problems, and the cost becomes enormous.
+</details>
 
-End Sidebar
 
 Despite concerns as to the sheer volume of data we're moving down the pipe, chopped up into IP packets, something miraculous happens when it reaches our computer. (Or phone. Or internet-enabled fridge.) A web page appears, formatted fairly consistently across devices, browsers, and operating systems. If you were a web developer during the early internet years, you'd understand what a miracle this is, what a long way we've come. Sticking to standards, especially when they're designed by a committee moving at a glacial pace while developers wanted to surge forward, was difficult at first. Vendors also wanted to gain a competitive advantage by offering features before their competition, even if those features had never seen a draft paper. New stuff is undoubtedly cool, and we owe a lot to those early browser pioneers, some of their crazy ideas did drive the direction of the web. But if you'd lived through those years, you'd appreciate the slow, steady pace of the W3C today, as well as for how blessedly the browser vendors stick close to the specifications when once they were on their own missions. Safari, Opera, Chrome, Firefox, Edge… whatever I use, I'm guaranteed a pretty good experience. (Provided, of course, the web developers also adhere to the same standards.) 
 
